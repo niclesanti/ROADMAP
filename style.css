@@ -87,24 +87,24 @@ header img {
 
 /* Cuadrado redondeado */
 .road-square {
-    border: 5px dashed black;
-    border-radius: 15px;
-    width: 250px;
-    height: 250px;
+    border: 10px dashed rgb(43, 43, 43);
+    border-radius: 35px;
+    width: 150px;
+    height: 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px auto;
+    margin: 7px auto;
     position: relative;
 }
 
 .flag-icon {
-    width: 30px;
+    width: 120px;
     position: absolute;
 }
 
 .flag-icon:nth-child(1) {
-    left: -20px;
+    left: -130px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -116,15 +116,25 @@ header img {
 }
 
 .flag-icon:nth-child(3) {
-    right: -20px;
+    right: -130px;
     top: 50%;
     transform: translateY(-50%);
 }
 
+.plane-icon {
+    width: 70px;
+    top: -30px;
+    right: -40px;
+    position: absolute;
+}
+
+
+
 /* Línea inferior */
 .road-end {
-    width: 5px;
-    height: 50px;
-    background: black;
-    margin: 0 auto;
+    width: 10px;
+    background: rgb(43, 43, 43);
+    height: 70px;
+    margin: 3px auto;
+    position: relative;
 }
