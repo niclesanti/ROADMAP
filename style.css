@@ -1,0 +1,121 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+header img {
+    width: 30px;
+    height: auto;
+}
+
+/* Contenedor de la ruta */
+#roadmap-container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+}
+
+#start-point {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Ruta */
+#roadmap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.road-line {
+    width: 5px;
+    background: black;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.road-button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff4d4d;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    top: 5px;
+}
+
+.road-button:hover {
+    transform: scale(1.1);
+}
+
+/* Cuadrado redondeado */
+.road-square {
+    border: 5px dashed black;
+    border-radius: 15px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    position: relative;
+}
+
+.flag-icon {
+    width: 30px;
+    position: absolute;
+}
+
+.flag-icon:nth-child(1) {
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.flag-icon:nth-child(2) {
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.flag-icon:nth-child(3) {
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Línea inferior */
+.road-end {
+    width: 5px;
+    height: 50px;
+    background: black;
+    margin: 0 auto;
+}
