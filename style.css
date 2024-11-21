@@ -1,6 +1,6 @@
 /* Estilo general */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto, sans-serif;
     margin: 0;
     padding: 0;
     background: #f9f9f9;
@@ -35,7 +35,7 @@ header img {
 }
 
 #start-point {
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 10px;
 }
 
@@ -49,8 +49,8 @@ header img {
 
 .road-line {
     width: 5px;
-    background: black;
-    height: 50px;
+    background: rgb(43, 43, 43);
+    height: 80px;
     margin: 0 auto;
     position: relative;
 }
@@ -59,21 +59,30 @@ header img {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    background: #ff4d4d;
+    background: transparent;
     border: none;
     border-radius: 50%;
-    color: white;
+    color: transparent;
     font-size: 24px;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
     transition: transform 0.2s;
     top: 5px;
+    align-items: center; /* Centra verticalmente la imagen */
+    justify-content: center; /* Centra horizontalmente la imagen */
 }
 
 .road-button:hover {
     transform: scale(1.1);
+}
+
+/* Imagen dentro del botón */
+.road-button img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain; /* Asegura que la imagen se ajuste sin deformarse */
 }
 
 /* Cuadrado redondeado */

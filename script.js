@@ -4,7 +4,16 @@ document.querySelectorAll('.road-button').forEach((button, index) => {
         const images = [
             'images/momento1.jpg',
             'images/momento2.jpg',
-            'images/momento3.jpg'
+            'images/momento3.jpg',
+            'images/momento4.jpg',
+            'images/momento5.jpg',
+            'images/momento6.jpg',
+            'images/momento7.jpg',
+            'images/momento8.jpg',
+            'images/momento9.jpg',
+            'images/momento10.jpg',
+            'images/momento11.jpg',
+            'images/momento12.jpg'
         ];
 
         const imgPath = images[index];
