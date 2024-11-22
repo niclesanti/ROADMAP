@@ -35,8 +35,13 @@ header img {
 }
 
 #start-point {
-    font-size: 15px;
-    margin-bottom: 10px;
+    margin-bottom: -30px;
+    margin: -25px;
+    position: relative;
+}
+.puntoPartida {
+    width: 150px;
+    position: relative;
 }
 
 /* Ruta */
@@ -74,6 +79,62 @@ header img {
     justify-content: center; /* Centra horizontalmente la imagen */
 }
 
+.letsGo {
+    width: 130px;
+    top: 5px;
+    right: 150px;
+    position: relative;
+}
+
+.puente {
+    width: 150px;
+    top: -30px;
+    right: -30px;
+    position: relative;
+}
+
+.monumentoBandera {
+    width: 150px;
+    top: -30px;
+    right: 180px;
+    position: relative;
+}
+
+.salchicha {
+    width: 130px;
+    top: -30px;
+    right: -40px;
+    position: relative;
+}
+
+.abrazo {
+    width: 130px;
+    top: -50px;
+    right: 160px;
+    position: relative;
+}
+
+.welcomeFlorida {
+    width: 120px;
+    top: -60px;
+    right: -40px;
+    position: relative;
+}
+
+.miami {
+    width: 120px;
+    top: -60px;
+    right: -40px;
+    position: relative;
+}
+
+.infinito {
+    width: 80px;
+    top: 70px;
+    right: 35px;
+    position: relative;
+}
+
 .road-button:hover {
     transform: scale(1.1);
 }
@@ -99,12 +160,12 @@ header img {
 }
 
 .flag-icon {
-    width: 120px;
+    width: 90px;
     position: absolute;
 }
 
 .flag-icon:nth-child(1) {
-    left: -130px;
+    left: -100px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -116,7 +177,7 @@ header img {
 }
 
 .flag-icon:nth-child(3) {
-    right: -130px;
+    right: -100px;
     top: 50%;
     transform: translateY(-50%);
 }

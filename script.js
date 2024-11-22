@@ -13,7 +13,9 @@ document.querySelectorAll('.road-button').forEach((button, index) => {
             'images/momento9.jpg',
             'images/momento10.jpg',
             'images/momento11.jpg',
-            'images/momento12.jpg'
+            'images/momento12.jpg',
+            'images/momento13.jpg',
+            'images/momento14.jpg'
         ];
 
         const imgPath = images[index];
