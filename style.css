@@ -114,6 +114,20 @@ header img {
     position: relative;
 }
 
+.mates {
+    width: 150px;
+    top: -50px;
+    right: -35px;
+    position: relative;
+}
+
+.paraTi {
+    width: 130px;
+    top: -50px;
+    right: 160px;
+    position: relative;
+}
+
 .welcomeFlorida {
     width: 120px;
     top: -60px;
@@ -121,10 +135,24 @@ header img {
     position: relative;
 }
 
+.bifurcacion {
+    width: 80px;
+    top: -100px;
+    right: 130px;
+    position: relative;
+}
+
 .miami {
     width: 120px;
     top: -60px;
     right: -40px;
+    position: relative;
+}
+
+.tuPuedes {
+    width: 130px;
+    top: -15px;
+    right: -15px;
     position: relative;
 }
 
