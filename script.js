@@ -1,3 +1,28 @@
+// Validación del login
+document.getElementById("login-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    // Valores ingresados por el usuario
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    // Credenciales válidas
+    const validUsername = "usuario1";
+    const validPassword = "1234";
+
+    // Validar credenciales
+    if (username === validUsername && password === validPassword) {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("Imagen-del-Login").style.display = "none";
+        document.getElementById("roadmap-container").style.display = "block";
+    } else {
+        const errorMessage = document.getElementById("error-message");
+        errorMessage.textContent = "Usuario o contraseña incorrectos";
+        errorMessage.style.display = "block";
+    }
+});
+
+
 // Manejo de botones en la ruta
 document.querySelectorAll('.road-button').forEach((button, index) => {
     button.addEventListener('click', () => {

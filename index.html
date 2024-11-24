@@ -13,14 +13,33 @@
         <img src="icons\flag-icon.png" alt="Flag Icon">
     </header>
 
+    <!-- Imagen del login -->
+    <div id="Imagen-del-Login">
+        <img src="icons\login.png" alt="Imagen de nosotros" class="loginImagen">
+    </div>
+
+    <!-- Contenedor del login -->
+    <div id="login-container">
+        
+        <h2>Iniciar Sesión</h2>
+        <form id="login-form">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Ingresar</button>
+            <p id="error-message"></p>
+        </form>
+    </div>
+
     <!-- Contenido Principal -->
-    <main>
-        <div id="roadmap-container">
+    <div id="roadmap-container" style="display: none;">
+        <main>
             <p id="start-point">
                 <img src="icons\punto-partida.png" alt="Punto de Partida" class="puntoPartida">
                 
             </p>
-
+    
             <!-- Ruta y botones -->
             <div id="roadmap">
                 <!-- Línea superior con botones -->
@@ -104,7 +123,7 @@
                         <img src="icons\boton-corazon.png" alt="corazón" />
                     </button>
                 </div>
-
+    
                 <!-- Cuadrado redondeado -->
                 <div class="road-square">
                     <img src="icons\argentina-flag.png" alt="Bandera Argentina" class="flag-icon">
@@ -112,7 +131,7 @@
                     <img src="icons\usa-flag.png" alt="Bandera USA" class="flag-icon">
                     <img src="icons\tu-puedes.png" alt="Tu puedes" class="tuPuedes">
                 </div>
-
+    
                 <!-- Línea inferior -->
                 <div class="road-line">
                     <img src="icons\miami.png" alt="Miami" class="miami">
@@ -124,8 +143,8 @@
                     <img src="icons\infinito.png" alt="Infinito" class="infinito">
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <script src="script.js"></script>
 </body>

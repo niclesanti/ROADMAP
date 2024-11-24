@@ -27,6 +27,70 @@ header img {
     height: auto;
 }
 
+/* Estilo del login */
+#login-container {
+    margin: 110px auto;
+    width: 210px;
+    padding: 50px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#login-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-align: left;
+}
+
+#login-form input {
+    width: 93%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    font-size: 14px;
+}
+
+#login-form button {
+    width: 99%;
+    padding: 8px;
+    background: #19a319;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background: #333;
+}
+
+#error-message {
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+
+#Imagen-del-Login {
+    margin-top: -50px;
+}
+
+.loginImagen {
+    width: 120px;
+    top: 160px;
+    right: 0px;
+    position: relative;
+}
+
 /* Contenedor de la ruta */
 #roadmap-container {
     margin: 20px auto;
