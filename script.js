@@ -7,7 +7,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
     const password = document.getElementById("password").value;
 
     // Credenciales válidas
-    const validUsername = "usuario1";
+    const validUsername = "niclesanti";
     const validPassword = "1234";
 
     // Validar credenciales
@@ -15,6 +15,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
         document.getElementById("login-container").style.display = "none";
         document.getElementById("Imagen-del-Login").style.display = "none";
         document.getElementById("roadmap-container").style.display = "block";
+        document.getElementById("Usuario-iniciado").style.display = "block";
     } else {
         const errorMessage = document.getElementById("error-message");
         errorMessage.textContent = "Usuario o contraseña incorrectos";
