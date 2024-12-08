@@ -7,11 +7,12 @@ document.getElementById("login-form").addEventListener("submit", function(event)
     const password = document.getElementById("password").value;
 
     // Credenciales válidas
-    const validUsername = "niclesanti";
-    const validPassword = "1234";
+    const validUsername1 = "niclesanti";
+    const validUsername2 = "sartorari";
+    const validPassword = "050124";
 
     // Validar credenciales
-    if (username === validUsername && password === validPassword) {
+    if ((username === validUsername1 || username === validUsername2) && password === validPassword) {
         document.getElementById("login-container").style.display = "none";
         document.getElementById("Imagen-del-Login").style.display = "none";
         document.getElementById("roadmap-container").style.display = "block";
