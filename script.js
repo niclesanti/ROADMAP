@@ -41,7 +41,8 @@ document.querySelectorAll('.road-button').forEach((button, index) => {
             'images/momento11.jpg',
             'images/momento12.jpg',
             'images/momento13.jpg',
-            'images/momento14.jpg'
+            'images/momento14.jpg',
+            'images/momento15.jpg'
         ];
 
         const imgPath = images[index];
@@ -78,3 +79,37 @@ function showImageModal(imgPath) {
 
     document.body.appendChild(modal);
 }
+
+/* Agregar el cerrar sesion */
+const headerButton = document.querySelector(".header-button");
+let cerrarSesionContainer = document.querySelector("#cerrar-sesion-container");
+
+// Crear el contenedor si no está en el HTML
+if (!cerrarSesionContainer) {
+    cerrarSesionContainer = document.createElement("div");
+    cerrarSesionContainer.id = "cerrar-sesion-container";
+    cerrarSesionContainer.innerHTML = `
+        <button id="logout-button">Cerrar sesión</button>
+    `;
+    document.body.appendChild(cerrarSesionContainer);
+}
+
+// Función para alternar la visibilidad del contenedor
+headerButton.addEventListener("click", () => {
+    const rect = headerButton.getBoundingClientRect();
+    cerrarSesionContainer.style.top = `${rect.bottom + window.scrollY}px`;
+    cerrarSesionContainer.style.right = `${window.innerWidth - rect.right}px`;
+    cerrarSesionContainer.style.display =
+        cerrarSesionContainer.style.display === "none" || cerrarSesionContainer.style.display === "" 
+            ? "block" 
+            : "none";
+});
+
+// Cerrar sesión: redirigir al login
+cerrarSesionContainer.addEventListener("click", (e) => {
+    if (e.target.id === "logout-button") {
+        cerrarSesionContainer.style.display = "none";
+        alert("Sesión cerrada"); // Mensaje opcional
+        window.location.reload(); // Volver al login
+    }
+});

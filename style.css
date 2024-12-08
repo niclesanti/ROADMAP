@@ -3,7 +3,8 @@ body {
     font-family: Roboto, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f9f9f9;
+    background: #d7dee1 url('icons/fondo.jpeg') no-repeat center center;
+    background-size: cover;
     text-align: center;
 }
 
@@ -138,9 +139,9 @@ header button {
 }
 
 .road-line {
-    width: 10px;
+    width: 13px;
     background: rgb(43, 43, 43);
-    height: 70px;
+    height: 65px;
     margin: 3px auto;
     position: relative;
 }
@@ -171,14 +172,14 @@ header button {
     position: relative;
 }
 
-.puente {
+.teAmo {
     width: 150px;
     top: -30px;
     right: -30px;
     position: relative;
 }
 
-.monumentoBandera {
+.PinkyPromise {
     width: 150px;
     top: -30px;
     right: 180px;
@@ -261,7 +262,7 @@ header button {
 
 /* Cuadrado redondeado */
 .road-square {
-    border: 10px dashed rgb(43, 43, 43);
+    border: 13px dashed rgb(43, 43, 43);
     border-radius: 35px;
     width: 150px;
     height: 300px;
@@ -312,3 +313,30 @@ header button {
     margin: 3px auto;
     position: relative;
 }
+
+/* Agregar el cerrar sesion */
+#cerrar-sesion-container {
+    position: absolute;
+    top: 50px; /* Ajusta según la altura del header */
+    right: 20px; /* Ajusta según el margen que desees desde la derecha */
+    background-color: white; /* Fondo para distinguir el contenedor */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: none; /* Oculto inicialmente */
+    z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+}
+#cerrar-sesion-container button {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #e75757;
+    color: white;
+    border-radius: 3px;
+    font-size: 14px;
+}
+#cerrar-sesion-container button:hover {
+    background-color: #e75757;
+}
+
